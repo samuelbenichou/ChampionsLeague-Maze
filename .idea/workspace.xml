@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="" />
+    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/MazeGame" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1ZMNTUPEPVaxJvChKRopCJHGJNf" />
@@ -82,12 +85,17 @@
       <workItem from="1584872714618" duration="820000" />
       <workItem from="1584875198068" duration="8421000" />
       <workItem from="1585404682395" duration="7735000" />
-      <workItem from="1585425326469" duration="331000" />
+      <workItem from="1585425326469" duration="605000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/MazeGame" />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="-1027" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1585406713535">
@@ -148,9 +156,10 @@
     </state>
     <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1440.814/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585424442493" />
     <state width="1638" height="345" key="GridCell.Tab.1.right/0.23.1440.816/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585415585673" />
-    <state x="221" y="72" key="SettingsEditor" timestamp="1585425366104">
-      <screen x="0" y="23" width="1440" height="821" />
+    <state x="221" y="72" key="SettingsEditor" timestamp="1585426414961">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
+    <state x="221" y="72" key="SettingsEditor/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426414961" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425366104" />
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1585425326404">
       <screen x="-1680" y="-127" width="1680" height="1027" />
@@ -158,10 +167,10 @@
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog/0.23.1440.812/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1584875198044" />
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog/0.23.1440.816/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585404708027" />
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog/0.23.1440.821/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585425326404" />
-    <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585425672655">
+    <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585426398600">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585425672655" />
+    <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426398600" />
     <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425500113" />
   </component>
 </project>

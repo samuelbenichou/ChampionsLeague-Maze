@@ -9,6 +9,7 @@ public class Maze {
     private Position goal;
 
 
+    // Default Constructor
     public Maze(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
