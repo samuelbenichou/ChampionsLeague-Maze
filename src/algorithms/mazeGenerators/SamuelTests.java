@@ -11,6 +11,7 @@ public class SamuelTests {
         Maze simple = b.generate(10,10);
         simple.print();
         System.out.println(b.measureAlgorithmTimeMillis(1000,1000));
+        /////////////////////////// /////////
     }
 
 }
