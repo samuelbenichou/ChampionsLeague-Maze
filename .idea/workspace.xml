@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="Add .gitignore file ignoring all IDE setting files">
+    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/ASearchingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/Astate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/BestFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/BreadthFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/DepthFirstSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/ISearchable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/ISearchingAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/MazeState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/algorithms/search/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +94,7 @@
       <workItem from="1584875198068" duration="8421000" />
       <workItem from="1585404682395" duration="7735000" />
       <workItem from="1585425326469" duration="1432000" />
-      <workItem from="1585583219377" duration="364000" />
+      <workItem from="1585583219377" duration="2539000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1585426477749</created>
@@ -109,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585427243933</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add .gitignore file ignoring all IDE setting files">
+      <created>1585583840927</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585583840927</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
