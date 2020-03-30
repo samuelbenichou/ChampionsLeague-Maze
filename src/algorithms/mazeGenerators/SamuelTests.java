@@ -12,6 +12,7 @@ public class SamuelTests {
         simple.print();
         System.out.println(b.measureAlgorithmTimeMillis(1000,1000));
         /////////////////////////// /////////
+        //Lior baru
     }
 
 }

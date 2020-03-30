@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="">
+    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="Add .gitignore file ignoring all IDE setting files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +86,7 @@
       <workItem from="1584875198068" duration="8421000" />
       <workItem from="1585404682395" duration="7735000" />
       <workItem from="1585425326469" duration="1432000" />
+      <workItem from="1585583219377" duration="364000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1585426477749</created>
@@ -128,12 +130,13 @@
     <state x="-1027" y="103" key="#com.intellij.ide.util.MemberChooser/0.23.1440.812/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1584893643899" />
     <state x="-1027" y="103" key="#com.intellij.ide.util.MemberChooser/0.23.1440.814/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1584876516043" />
     <state x="-1027" y="103" key="#com.intellij.ide.util.MemberChooser/0.23.1440.816/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585406713535" />
-    <state x="-1326" y="-114" key="CommitChangelistDialog2" timestamp="1585427243726">
-      <screen x="-1680" y="-127" width="1680" height="1027" />
+    <state x="303" y="33" key="CommitChangelistDialog2" timestamp="1585583325142">
+      <screen x="0" y="23" width="1440" height="816" />
     </state>
     <state x="-1326" y="-114" key="CommitChangelistDialog2/0.23.1440.814/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585427243726" />
     <state x="303" y="33" key="CommitChangelistDialog2/0.23.1440.814/-1680.-127.1680.1027@0.23.1440.814" timestamp="1585426965550" />
     <state x="303" y="33" key="CommitChangelistDialog2/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426477525" />
+    <state x="303" y="33" key="CommitChangelistDialog2/0.23.1440.816@0.23.1440.816" timestamp="1585583325142" />
     <state x="-989" y="287" key="Github.ShareDialog" timestamp="1585427340605">
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
@@ -200,16 +203,18 @@
     <state x="221" y="72" key="SettingsEditor/0.23.1440.814/-1680.-127.1680.1027@0.23.1440.814" timestamp="1585426511577" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426414961" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425366104" />
-    <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog" timestamp="1585425326404">
-      <screen x="-1680" y="-127" width="1680" height="1027" />
+    <state x="457" y="297" key="com.intellij.ide.util.TipDialog" timestamp="1585583219232">
+      <screen x="0" y="23" width="1440" height="814" />
     </state>
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog/0.23.1440.812/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1584875198044" />
+    <state x="457" y="297" key="com.intellij.ide.util.TipDialog/0.23.1440.814@0.23.1440.814" timestamp="1585583219232" />
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog/0.23.1440.816/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585404708027" />
     <state x="-1147" y="219" key="com.intellij.ide.util.TipDialog/0.23.1440.821/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585425326404" />
-    <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585426398600">
-      <screen x="0" y="23" width="1440" height="816" />
+    <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585583809361">
+      <screen x="0" y="23" width="1440" height="821" />
     </state>
     <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426398600" />
     <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425500113" />
+    <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821@0.23.1440.821" timestamp="1585583809361" />
   </component>
 </project>

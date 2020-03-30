@@ -9,6 +9,7 @@ public class MyMazeGenerator extends AMazeGenerator {
         /*
             We will use Prim Algorithm to generate the maze.
          */
+
         return null;
     }
 
