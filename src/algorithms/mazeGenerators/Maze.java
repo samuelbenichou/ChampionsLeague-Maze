@@ -1,5 +1,7 @@
 package algorithms.mazeGenerators;
 
+import java.util.Random;
+
 public class Maze {
 
     private int rows;
@@ -8,20 +10,20 @@ public class Maze {
     private Position start;
     private Position goal;
 
-
     // Default Constructor
     public Maze(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
         maze = new int[rows][columns];
-        randomPosition();
+        setRandomPosition();
     }
 
-    public Maze(int rows, int columns, Position start, Position goal) {
-        this.rows = rows;
-        this.columns = columns;
+    public Maze(int[][] array ,Position start, Position goal) {
+        maze = array;
         this.start = start;
         this.goal = goal;
+        this.rows = array.length;
+        this.columns = array[0].length;
     }
 
     public void print(){
@@ -49,6 +51,26 @@ public class Maze {
         this.goal = new Position(rowIndex*(rows-1),colIndex);
     }
 
+    private void setRandomPosition(){
+        Random r = new Random();
+        int rowIndex = r.nextInt(rows);
+        int colIndex;
+        if (rowIndex == 0 || rowIndex == maze.length-1){
+            colIndex = r.nextInt(maze[0].length);
+        }else{
+            colIndex = ((int) Math.round(Math.random())) * (maze[0].length-1);
+        }
+        start = new Position(rowIndex,colIndex);
+        while (start.getRowIndex() == rowIndex || start.getColumnIndex() == colIndex){
+            rowIndex = r.nextInt(maze.length);
+            if (rowIndex == 0 || rowIndex == maze.length-1){
+                colIndex = r.nextInt(maze[0].length);
+            }else{
+                colIndex = ((int) Math.round(Math.random())) * (maze[0].length-1);
+            }
+        }
+        goal = new Position(rowIndex,colIndex);
+    }
 
     public Position getStartPosition() {
         return start;
@@ -58,7 +80,8 @@ public class Maze {
         return goal;
     }
 
-    public void setCell(int rowIndex,int colIndex,int value){
+    public void setCell(int rowIndex, int colIndex, int value){
         maze[rowIndex][colIndex] = value;
     }
+
 }
