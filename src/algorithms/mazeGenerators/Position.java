@@ -5,10 +5,14 @@ public class Position {
     private int rowIndex;
     private int columnIndex;
 
-
     public Position(int row, int col) {
         this.rowIndex = row;
         this.columnIndex = col;
+    }
+
+    public Position(Position other) {
+        this.rowIndex = other.rowIndex;
+        this.columnIndex = other.columnIndex;
     }
 
     public int getRowIndex() {
@@ -28,4 +32,8 @@ public class Position {
         return (other.rowIndex == rowIndex && other.columnIndex == columnIndex)? true: false;
     }
 
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
 }

@@ -14,9 +14,9 @@ public class SamuelTests {
         /////////////////////////// /////////
         //Lior baru
         MyMazeGenerator myMaze = new MyMazeGenerator();
-        Maze maze = myMaze.generate(3,3);
+        //Maze maze = myMaze.generate(3,3);
         //maze.print();
-        System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
+        //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
     }
 
 }
