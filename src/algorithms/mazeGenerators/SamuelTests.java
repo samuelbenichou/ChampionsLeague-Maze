@@ -21,7 +21,7 @@ public class SamuelTests {
         //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
         
 
-        //for samuel
+        //for samuel new
         
     }
 
