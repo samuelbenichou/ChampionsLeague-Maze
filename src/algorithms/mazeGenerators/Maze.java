@@ -82,15 +82,27 @@ public class Maze {
         return goal;
     }
 
+    public int getRows() {
+        return rows;
+    }
+
+    public int getColumns() {
+        return columns;
+    }
+
+    public int[][] getMaze() {
+        return maze;
+    }
+
     public void setCell(int rowIndex, int colIndex, int value){
         maze[rowIndex][colIndex] = value;
     }
 
-    public int getColNum(){
-        return this.columns;
-    }
-    public int getRowNum(){
-        return this.rows;
+    public void setStart(Position start) {
+        this.start = start;
     }
 
+    public void setGoal(Position goal) {
+        this.goal = goal;
+    }
 }
