@@ -20,7 +20,7 @@ public class SamuelTests {
         //maze.print();
         //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
 
-        //lior updet
+        
     }
 
 }

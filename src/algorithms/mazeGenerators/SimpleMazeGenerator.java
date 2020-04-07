@@ -36,8 +36,8 @@ public class SimpleMazeGenerator extends AMazeGenerator {
 
         int currPosCol= 0;
         int currPosRow= 0;
-        int colNUM= simpleMaze.getColNum();
-        int rowNUM= simpleMaze.getRowNum();
+        int colNUM= simpleMaze.getColumns();
+        int rowNUM= simpleMaze.getRows();
         //go for the sides
         if(colEX>colS ){
             currPosCol=colS+1; 
@@ -82,16 +82,6 @@ public class SimpleMazeGenerator extends AMazeGenerator {
 
     /*
     @Override
-    public Maze generate(int row, int cols) {
-        if (row < 2 || cols < 2)
-            return null;
-        Maze simpleMaze = new Maze(row, cols);
-        simpleMaze = new Maze(row, cols);
-        simpleMaze.print();
-        Maze pathMaze = createPath(simpleMaze);
-        simpleMaze.print();
-        return pathMaze;
-    }
 
     public Maze createPath(Maze emptyM){
         Position startP= emptyM.getStartPosition();
@@ -109,10 +99,6 @@ public class SimpleMazeGenerator extends AMazeGenerator {
         int rowC = curentPos.getRowIndex();
         int colC = curentPos.getColumnIndex();
 
-        ///////////////////////////////////////////////////
-        System.out.println("");
-        emptyM.print();
-        //////////////////////////////////////////////////
         while( (rowC!=rowEX) || (colC!= colEX) ){
                 if( !(rowC==rowS && colC==colS) )
                     emptyM.setCell(rowC, colC, 2);    
