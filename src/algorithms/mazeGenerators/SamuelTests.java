@@ -9,17 +9,18 @@ public class SamuelTests {
         //System.out.println(a.measureAlgorithmTimeMillis(10,10));
 
         SimpleMazeGenerator b = new SimpleMazeGenerator();
-        Maze simple = b.generate(30,30);
-        System.out.println("");
+        Maze simple = b.generate(15,15);
+        System.out.println("  ");
         simple.print();
-
-   
-
+        //System.out.println(b.measureAlgorithmTimeMillis(1000,1000));
+        /////////////////////////// /////////
+        
         //MyMazeGenerator myMaze = new MyMazeGenerator();
-        //Maze maze = myMaze.generate(10,10);
+        //Maze maze = myMaze.generate(3,3);
         //maze.print();
-
         //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
+
+        //lior updet
     }
 
 }
