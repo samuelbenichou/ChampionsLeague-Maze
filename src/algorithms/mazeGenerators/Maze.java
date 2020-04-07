@@ -10,12 +10,14 @@ public class Maze {
     private Position start;
     private Position goal;
 
+
     // Default Constructor
     public Maze(int rows, int columns) {
         this.rows = rows;
         this.columns = columns;
         maze = new int[rows][columns];
         setRandomPosition();
+
     }
 
     public Maze(int[][] array ,Position start, Position goal) {
@@ -80,27 +82,15 @@ public class Maze {
         return goal;
     }
 
-    public int getRows() {
-        return rows;
-    }
-
-    public int getColumns() {
-        return columns;
-    }
-
-    public int[][] getMaze() {
-        return maze;
-    }
-
     public void setCell(int rowIndex, int colIndex, int value){
         maze[rowIndex][colIndex] = value;
     }
 
-    public void setStart(Position start) {
-        this.start = start;
+    public int getColNum(){
+        return this.columns;
+    }
+    public int getRowNum(){
+        return this.rows;
     }
 
-    public void setGoal(Position goal) {
-        this.goal = goal;
-    }
 }
