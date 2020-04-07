@@ -18,6 +18,12 @@ public class Position {
     public int getColumnIndex() {
         return columnIndex;
     }
+    public void setColumnIndex(int newCol){
+        this.columnIndex=newCol;
+    }
+    public void setRowIndex(int newRow){
+        this.rowIndex= newRow;
+    }
 
     @Override
     public String toString() {
