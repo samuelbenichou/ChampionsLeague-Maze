@@ -27,7 +27,7 @@ public class SimpleMazeGenerator extends AMazeGenerator {
     }
  
     public Maze createPath(Maze simpleMaze){
-        simpleMaze.print();
+        //simpleMaze.print();
 
         int rowS=simpleMaze.getStartPosition().getRowIndex();
         int colS=simpleMaze.getStartPosition().getColumnIndex();
