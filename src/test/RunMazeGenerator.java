@@ -24,6 +24,7 @@ public class RunMazeGenerator {
         //Maze maze = myMaze.generate(3,3);
         //maze.print();
         //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));*/
+        //lior
     }
 
     private static void testMazeGenerator(IMazeGenerator mazeGenerator) {
