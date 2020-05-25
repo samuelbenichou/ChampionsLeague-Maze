@@ -1,5 +1,7 @@
 package test;
 
+import IO.MyCompressorOutputStream;
+import IO.OutputStream;
 import algorithms.mazeGenerators.*;
 
 /**
@@ -7,9 +9,11 @@ import algorithms.mazeGenerators.*;
  */
 public class RunMazeGenerator {
     public static void main(String[] args) {
-        testMazeGenerator(new EmptyMazeGenerator());
-        testMazeGenerator(new SimpleMazeGenerator());
-        testMazeGenerator(new MyMazeGenerator());
+//        testMazeGenerator(new EmptyMazeGenerator());
+//        testMazeGenerator(new SimpleMazeGenerator());
+//        testMazeGenerator(new MyMazeGenerator());
+        //-----------------------------------------------------------------------
+
         /*EmptyMazeGenerator a = new EmptyMazeGenerator();
         Maze empty = a.generate(10,10);
         //empty.print();
@@ -19,12 +23,37 @@ public class RunMazeGenerator {
         simple.print();
         //System.out.println(b.measureAlgorithmTimeMillis(1000,1000));
         /////////////////////////// /////////
-        //Lior baru
+        */
+
+
+        System.out.println("--------------------------lior");
+//        int num=127;
+//        byte nb = (byte)num;
+//        System.out.println(nb);
+
         MyMazeGenerator myMaze = new MyMazeGenerator();
-        //Maze maze = myMaze.generate(3,3);
-        //maze.print();
-        //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));*/
-        //lior
+        Maze maze = myMaze.generate(10,10);
+        maze.print();
+        System.out.println();
+        //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
+        //System.out.println();
+        maze.printMazeInfo();
+        System.out.println();
+
+        byte[] mazeinfo = maze.toByteArray();
+        Maze maze2 = new Maze(mazeinfo);
+        maze2.print();
+
+        System.out.println();
+        OutputStream outStr = new OutputStream();
+        MyCompressorOutputStream mazeComp = new MyCompressorOutputStream();
+        try{
+            mazeComp.write(mazeinfo);
+        }
+        catch (Exception e){
+            System.out.println("exp");
+        }
+
     }
 
     private static void testMazeGenerator(IMazeGenerator mazeGenerator) {
