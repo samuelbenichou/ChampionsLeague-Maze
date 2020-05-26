@@ -3,8 +3,6 @@ package algorithms.search;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.concurrent.LinkedTransferQueue;
 import java.util.*;
 
 public abstract class ASearchingAlgorithm implements ISearchingAlgorithm {
@@ -26,7 +24,7 @@ public abstract class ASearchingAlgorithm implements ISearchingAlgorithm {
     }
 
     public Solution backTrackingToStartState(AState goalState){
-        //System.out.println("after back tracking");
+
         ArrayList<AState> solutionPath = new ArrayList<>();
         solutionPath.add(goalState);
         AState parentState = goalState.getCameFrom();

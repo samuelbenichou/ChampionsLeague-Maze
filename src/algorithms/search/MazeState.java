@@ -21,11 +21,9 @@ public class MazeState extends AState {
         this.currentPosition = currentPosition;
     }
 
-
     public Position getCurrentPosition() {
         return currentPosition;
     }
-
 
     @Override
     public boolean equals(Object obj) {

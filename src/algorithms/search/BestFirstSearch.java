@@ -1,6 +1,5 @@
 package algorithms.search;
 
-import java.util.HashMap;
 import java.util.PriorityQueue;
 import java.util.Comparator;
 

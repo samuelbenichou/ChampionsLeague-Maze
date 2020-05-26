@@ -5,9 +5,6 @@ import java.util.concurrent.LinkedTransferQueue;
 
 public class BreadthFirstSearch extends ASearchingAlgorithm{
 
-    //protected LinkedTransferQueue<AState> visited;
-    //protected Queue<AState> visited;
-
     public BreadthFirstSearch() {
         visited = new LinkedTransferQueue<>();
         states = new HashMap<>();
@@ -16,13 +13,8 @@ public class BreadthFirstSearch extends ASearchingAlgorithm{
     @Override
     public Solution solve(ISearchable domain) {
         if (domain == null) return null;
-
-        //visited = new LinkedTransferQueue<>();
-        //states = new HashMap<>();
         AState goalState = BFS(domain);
-        //System.out.println("before back tracking");
         return goalState != null ? backTrackingToStartState(goalState) : null ;
-
     }
 
     private AState BFS(ISearchable domain){
@@ -38,7 +30,6 @@ public class BreadthFirstSearch extends ASearchingAlgorithm{
             // Iterator through the possibles states of current state.
             for (AState neighbour : domain.getAllPossibleStates(currentState)) {
                 if (!states.containsKey(neighbour.toString())){
-                //if (!(visited.contains(neighbour))){
                     states.put(neighbour.toString(),neighbour);
                     visited.add(neighbour);
                 }

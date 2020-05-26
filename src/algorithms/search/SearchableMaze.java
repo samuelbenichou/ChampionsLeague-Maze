@@ -65,36 +65,6 @@ public class SearchableMaze implements ISearchable {
         if ((right || down) && isMoveValid(row+1,col+1)){
             allPossibleStates.add(new MazeState(new Position(row+1 ,col+1),currentState,currentState.getCost()+15));
         }
-
-        /*boolean left = isMoveValid(row,col-1);
-        if (left){
-            allPossibleStates.add(new MazeState(new Position(row ,col-1),currentState));
-        }
-        boolean right = isMoveValid(row,col+1);
-        if (right){
-            allPossibleStates.add(new MazeState(new Position(row ,col+1),currentState));
-        }
-        boolean up = isMoveValid(row-1,col);
-        if (up){
-            allPossibleStates.add(new MazeState(new Position(row-1 ,col),currentState));
-        }
-        boolean down = isMoveValid(row+1,col);
-        if (down){
-            allPossibleStates.add(new MazeState(new Position(row+1 ,col),currentState));
-        }
-
-        if ((left || up) && isMoveValid(row-1,col-1)){
-            allPossibleStates.add(new MazeState(new Position(row-1 ,col-1),currentState));
-        }
-        if ((right || up) && isMoveValid(row-1,col+1)){
-            allPossibleStates.add(new MazeState(new Position(row-1 ,col+1),currentState));
-        }
-        if ((left || down) && isMoveValid(row+1,col-1)){
-            allPossibleStates.add(new MazeState(new Position(row+1 ,col-1),currentState));
-        }
-        if ((right || up) && isMoveValid(row+1,col+1)){
-            allPossibleStates.add(new MazeState(new Position(row+1 ,col+1),currentState));
-        }*/
         return allPossibleStates;
     }
 
