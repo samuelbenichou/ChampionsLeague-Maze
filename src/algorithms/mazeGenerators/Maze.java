@@ -1,19 +1,16 @@
 package algorithms.mazeGenerators;
 
-import java.util.Random;
-import java.io.Serializable;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
-import static java.util.Arrays.stream;
-import static java.util.stream.IntStream.range;
+import java.util.Random;
 
-public class Maze implements Serializable{
+public class Maze {
 
     private int rows;
     private int columns;
     private int[][] maze;
     private Position start;
     private Position goal;
-    private int indexByteArray = 0; //A global index for moving
 
 
     // Default Constructor
@@ -45,6 +42,17 @@ public class Maze implements Serializable{
             }
             System.out.println();
         }
+    }
+
+    public void randomPosition(){
+        int rowIndex = (int) Math.round(Math.random());
+        int colIndex = (int) (Math.random()*columns);
+        this.start = new Position(rowIndex * (rows-1),colIndex);
+        while ((rowIndex* (rows-1)) == start.getRowIndex() || colIndex == start.getColumnIndex()){
+            rowIndex = (int) Math.round(Math.random());
+            colIndex = (int) (Math.random() *columns);
+        }
+        this.goal = new Position(rowIndex*(rows-1),colIndex);
     }
 
     private void setRandomPosition(){
@@ -100,47 +108,100 @@ public class Maze implements Serializable{
         this.goal = goal;
     }
 
-    private int byteArrayToInt(byte[] byteArray) {
-        int count = 0;
-        count += (byteArray[indexByteArray])+(Byte.MAX_VALUE+1);
-        indexByteArray++;
-        while(byteArray[indexByteArray] != (byte) 127) {
-            count += (byteArray[indexByteArray])+(Byte.MAX_VALUE+1);
-            indexByteArray++;
-        }
-        indexByteArray++;
-        return count;
-    }
+    //-----------------------------------------------------------------------------------------------------part B
 
-    public byte[] toByteArray() {
-        ArrayList<Byte> dynamicBytes = new ArrayList<>();
-        insertToByteArray(dynamicBytes, maze.length);
-        insertToByteArray(dynamicBytes, maze[0].length);
-        insertToByteArray(dynamicBytes, start.getRowIndex());
-        insertToByteArray(dynamicBytes, start.getColumnIndex());
-        insertToByteArray(dynamicBytes, goal.getRowIndex());
-        insertToByteArray(dynamicBytes, goal.getColumnIndex());
-
-        stream(maze).forEach(ints -> range(0, maze.length).mapToObj(j -> toUnsignedByte(ints[j])).forEachOrdered(dynamicBytes::add));
-        byte[] byteArray = new byte[dynamicBytes.size()];
-        range(0, byteArray.length).forEach(i -> byteArray[i] = dynamicBytes.get(i));
-
-        return byteArray;
-    }
-
-    private void insertToByteArray(ArrayList<Byte> dynamicByte, int insert) {
-        if (insert / 254 != 0) {
-            int i = 0;
-            while(i < insert / 254) {
-                dynamicByte.add(toUnsignedByte(254));
-                i++;
+    public Maze(byte[] mazeinfo){
+        int pos=0;
+        int num=0;
+        int x=0;
+        int y=0;
+        for(int i=0; i<6; i++){
+            while( mazeinfo[pos]!=-1 ){
+                num = num + mazeinfo[pos];
+                pos++;
             }
-        } else
-            dynamicByte.add(toUnsignedByte(insert % 254)); // remainder
-        dynamicByte.add((byte) 127); //delimiter
+            pos++;
+            if(i%2==0){ x=num; }
+            else{ y=num; }
+
+            if( i==0 ){
+                rows = num;
+            }
+            else if( i==1 ){
+                columns = num;
+            }
+            else if( i==3 ){
+                start = new Position( x, y);
+            }
+            else if( i==5 ){
+                goal = new Position( x , y);
+            }
+            num=0;
+        }
+
+        maze = new int[rows][columns];
+        int currentSell =pos-1;
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<columns; j++){
+                currentSell++;
+                maze[i][j] = mazeinfo[currentSell];
+            }
+        }
     }
 
-    private byte toUnsignedByte(int from) {
-        return (byte) (from-(Byte.MAX_VALUE+1));
+    public void printMazeInfo(){
+        byte[] mazeinfo = toByteArray();
+        for( int i=0; i< mazeinfo.length; i++){
+            if( mazeinfo[i]==-1 ){
+                System.out.print( mazeinfo[i]+"  " );
+            }
+            else{
+                System.out.print( mazeinfo[i]+" " );
+            }
+        }
     }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+public byte[] toByteArray() {
+    ArrayList<Byte> mazeBytesInfo = new ArrayList<>();
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, rows);
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, columns);
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, start.getRowIndex() );
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, start.getColumnIndex() );
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, goal.getRowIndex() );
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, goal.getColumnIndex());
+
+    for(int i=0; i<rows; i++){
+        for(int j=0; j<columns; j++){
+            mazeBytesInfo.add( (byte)(maze[i][j]) );
+        }
+    }
+    byte[] byteArray = new byte[mazeBytesInfo.size()+1];//+1 for the -1 symbol the end
+    int i=0;
+    for( i=0; i<mazeBytesInfo.size() ; i++){
+        byteArray[i]= mazeBytesInfo.get(i);
+    }
+    byteArray[i]= (byte)-1;
+    return byteArray;
+
 }
+
+    private ArrayList<Byte> conIntToByteArray( ArrayList<Byte> mazeBytesInfo, int num) {
+        if(num > 127){
+            int i=0;
+            while( num>127){
+                mazeBytesInfo.add( (byte)127 );
+                num = num -127;
+            }
+            mazeBytesInfo.add( (byte)num );
+            mazeBytesInfo.add( (byte)-1 );
+        }
+        else{
+            mazeBytesInfo.add( (byte)num );
+            mazeBytesInfo.add( (byte)-1 );
+        }
+
+        return mazeBytesInfo;
+    }
+
+}//class

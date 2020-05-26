@@ -140,4 +140,4 @@ public class MyMazeGenerator extends AMazeGenerator {
         }
     }
 
-}
+}//class

@@ -1,24 +1,69 @@
 package test;
 
+import IO.MyCompressorOutputStream;
+import IO.OutputStream;
 import algorithms.mazeGenerators.*;
 
 /**
- * Created by Samuel on 3/22/2020.
+ * Created by Samuel on 3/(22)/2020.
  */
 public class RunMazeGenerator {
     public static void main(String[] args) {
-        testMazeGenerator(new SimpleMazeGenerator());
-        testMazeGenerator(new MyMazeGenerator());
+//        testMazeGenerator(new EmptyMazeGenerator());
+//        testMazeGenerator(new SimpleMazeGenerator());
+//        testMazeGenerator(new MyMazeGenerator());
+        //-----------------------------------------------------------------------
+
+        /*EmptyMazeGenerator a = new EmptyMazeGenerator();
+        Maze empty = a.generate(10,10);
+        //empty.print();
+        //System.out.println(a.measureAlgorithmTimeMillis(10,10));
+        SimpleMazeGenerator b = new SimpleMazeGenerator();
+        Maze simple = b.generate(5,5);
+        simple.print();
+        //System.out.println(b.measureAlgorithmTimeMillis(1000,1000));
+        /////////////////////////// /////////
+        */
+
+
+        System.out.println("--------------------------lior");
+//        int num=127;
+//        byte nb = (byte)num;
+//        System.out.println(nb);
+
+        MyMazeGenerator myMaze = new MyMazeGenerator();
+        Maze maze = myMaze.generate(10,10);
+        maze.print();
+        System.out.println();
+        //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
+        //System.out.println();
+        maze.printMazeInfo();
+        System.out.println();
+
+        byte[] mazeinfo = maze.toByteArray();
+        Maze maze2 = new Maze(mazeinfo);
+        maze2.print();
+
+        System.out.println();
+        OutputStream outStr = new OutputStream();
+        MyCompressorOutputStream mazeComp = new MyCompressorOutputStream();
+        try{
+            mazeComp.write(mazeinfo);
+        }
+        catch (Exception e){
+            System.out.println("exp");
+        }
+
     }
 
     private static void testMazeGenerator(IMazeGenerator mazeGenerator) {
         // prints the time it takes the algorithm to run
         System.out.println(String.format("Maze generation time(ms): %s", mazeGenerator.measureAlgorithmTimeMillis(100/*rows*/,100/*columns*/)));
         // generate another maze
-        Maze maze = mazeGenerator.generate(100/*rows*/, 100/*columns*/);
+        Maze maze = mazeGenerator.generate(1000/*rows*/, 1000/*columns*/);
 
         // prints the maze
-        maze.print();
+        //maze.print();
 
         // get the maze entrance
         Position startPosition = maze.getStartPosition();

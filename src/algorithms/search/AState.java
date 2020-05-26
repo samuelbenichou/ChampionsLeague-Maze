@@ -10,18 +10,16 @@ public abstract class AState implements Serializable {
 
     private int cost;
     private AState cameFrom;
-    private final long serialVersionUID;
+    
 
     public AState(int weight, AState parent) {
         this.cost = weight;
         this.cameFrom = parent;
-        this.serialVersionUID =0;
     }
 
     public AState(AState parent) {
         this.cost = 0;
         this.cameFrom = parent;
-        this.serialVersionUID =0;
     }
 
     public void setCost(int cost) {
