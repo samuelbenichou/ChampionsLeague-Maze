@@ -3,27 +3,16 @@ package IO;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Dictionary;
-import java.util.zip.Inflater;
 import java.util.zip.InflaterOutputStream;
 
 public class MyDecompressorInputStream extends InputStream {
 
     private InputStream in;
 
-    /**
-     * Constructor that gets an InputStream
-     * and initialize new Decompressor
-     */
     public MyDecompressorInputStream(InputStream stream){
-        if (stream != null)
-            in = stream;
+        in = stream;
     }
 
-    /**
-     * This function reads the whole file
-     * @return
-     */
     @Override
     public int read() {
         try {
@@ -35,11 +24,6 @@ public class MyDecompressorInputStream extends InputStream {
         }
     }
 
-    /**
-     * This function reads the file decompress it to the given byte array
-     * @param b
-     * @return
-     */
     @Override
     public int read(byte[] b) throws ArrayIndexOutOfBoundsException{
         try {
@@ -53,11 +37,8 @@ public class MyDecompressorInputStream extends InputStream {
         }
     }
 
-    /**
-     * This function decompress the given byte array
-     * @param in
-     */
-    public static void decompress(byte[] in) throws ArrayIndexOutOfBoundsException {
+    public static void decompress(byte[] in)  {
+        int i = 0;
         try {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
             InflaterOutputStream infl = new InflaterOutputStream(out /*, new Inflater(true)*/);
@@ -66,10 +47,12 @@ public class MyDecompressorInputStream extends InputStream {
             infl.close();
 
             byte[] decompress = out.toByteArray();
-            for (int i = 0 ; i < decompress.length ; i++)
+
+            for (i = 0 ; i < decompress.length ; i++)
                 in[i] = decompress[i];
 
-        } catch (IOException e) {
+        } catch (Exception e) {
+            System.out.println("index : " + i);
             e.printStackTrace();
         }
     }

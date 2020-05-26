@@ -1,31 +1,59 @@
 package IO;
+
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.ArrayList;
+import java.io.ByteArrayOutputStream;
+import java.util.zip.DeflaterOutputStream;
 
 
 public class MyCompressorOutputStream extends OutputStream {
-    public OutputStream out;
-    //private byte theLastByte;
-    //private int counterByte;
 
+    private OutputStream out;
 
 
     public MyCompressorOutputStream(OutputStream out) {
         this.out = out;
-        //theLastByte = 0;
-        //counterByte = 0;
-    }
-    public MyCompressorOutputStream() {
-        //theLastByte = 0;
-        //counterByte = 0;
     }
 
 
     public void write(int b) throws IOException {
+        try {
+            out.write(b);
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void write(byte[] b) {
+        try{
+            out.write(compress(b));
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
 
     }
-    public void write(byte[] mazeinfo) throws IOException {
+
+    public static byte[] compress(byte[] in) {
+        try {
+            ByteArrayOutputStream out = new ByteArrayOutputStream();
+            DeflaterOutputStream defl = new DeflaterOutputStream(out);
+            defl.write(in);
+            defl.flush();
+            defl.close();
+
+            return out.toByteArray();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+
+
+    /*public void write(byte[] mazeinfo) throws IOException {
         ArrayList<Byte> mazeBytesInfo = new ArrayList<>();
         int pos=0;
         int num=0;
@@ -89,6 +117,6 @@ public class MyCompressorOutputStream extends OutputStream {
             }
 
         }
-    }//func
+    }//func*/
 
 }//class

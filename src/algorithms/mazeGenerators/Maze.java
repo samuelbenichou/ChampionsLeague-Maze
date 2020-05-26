@@ -3,8 +3,9 @@ package algorithms.mazeGenerators;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
+import java.io.Serializable;
 
-public class Maze {
+public class Maze implements Serializable{
 
     private int rows;
     private int columns;
@@ -42,17 +43,6 @@ public class Maze {
             }
             System.out.println();
         }
-    }
-
-    public void randomPosition(){
-        int rowIndex = (int) Math.round(Math.random());
-        int colIndex = (int) (Math.random()*columns);
-        this.start = new Position(rowIndex * (rows-1),colIndex);
-        while ((rowIndex* (rows-1)) == start.getRowIndex() || colIndex == start.getColumnIndex()){
-            rowIndex = (int) Math.round(Math.random());
-            colIndex = (int) (Math.random() *columns);
-        }
-        this.goal = new Position(rowIndex*(rows-1),colIndex);
     }
 
     private void setRandomPosition(){
@@ -166,22 +156,22 @@ public byte[] toByteArray() {
     ArrayList<Byte> mazeBytesInfo = new ArrayList<>();
     mazeBytesInfo = conIntToByteArray(mazeBytesInfo, rows);
     mazeBytesInfo = conIntToByteArray(mazeBytesInfo, columns);
-    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, start.getRowIndex() );
-    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, start.getColumnIndex() );
-    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, goal.getRowIndex() );
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, start.getRowIndex());
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, start.getColumnIndex());
+    mazeBytesInfo = conIntToByteArray(mazeBytesInfo, goal.getRowIndex());
     mazeBytesInfo = conIntToByteArray(mazeBytesInfo, goal.getColumnIndex());
 
-    for(int i=0; i<rows; i++){
-        for(int j=0; j<columns; j++){
-            mazeBytesInfo.add( (byte)(maze[i][j]) );
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            mazeBytesInfo.add((byte) (maze[i][j]));
         }
     }
-    byte[] byteArray = new byte[mazeBytesInfo.size()+1];//+1 for the -1 symbol the end
-    int i=0;
-    for( i=0; i<mazeBytesInfo.size() ; i++){
-        byteArray[i]= mazeBytesInfo.get(i);
+    byte[] byteArray = new byte[mazeBytesInfo.size() + 1];//+1 for the -1 symbol the end
+    int i = 0;
+    for (i = 0; i < mazeBytesInfo.size(); i++) {
+        byteArray[i] = mazeBytesInfo.get(i);
     }
-    byteArray[i]= (byte)-1;
+    byteArray[i] = (byte) -1;
     return byteArray;
 
 }

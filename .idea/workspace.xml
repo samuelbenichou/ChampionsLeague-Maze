@@ -6,22 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IO/MyDecompressorInputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="Add Decompress Class">
+      <change afterPath="$PROJECT_DIR$/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/MyMazeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SimpleMazeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ASearchingAlgorithm.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/AState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BreadthFirstSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/DepthFirstSearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/MazeState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/SearchableMaze.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/Solution.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/IO/MyCompressorOutputStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/IO/MyCompressorOutputStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/MyCompressorOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/MyCompressorOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/MyDecompressorInputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/MyDecompressorInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/OutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Configurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Configurations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ServerStrategyGenerateMaze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ServerStrategyGenerateMaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ServerStrategySolveSearchProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ServerStrategySolveSearchProblem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/ServerStrategyStringReverser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Server/ServerStrategyStringReverser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RunCommunicateWithServers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RunCommunicateWithServers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,33 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
-  <component name="RunManager" selected="Application.RunSearchOnMaze">
+  <component name="RunManager" selected="Application.RunCommunicateWithServers">
+    <configuration name="RunCommunicateWithServers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.RunCommunicateWithServers" />
+      <module name="Maze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RunCompressDecompressMaze" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.RunCompressDecompressMaze" />
+      <module name="Maze" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RunMazeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.RunMazeGenerator" />
       <module name="Maze" />
@@ -104,19 +131,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SamuelTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="algorithms.mazeGenerators.SamuelTests" />
-      <module name="Maze" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.mazeGenerators.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="searchTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="algorithms.search.searchTest" />
       <module name="Maze" />
@@ -132,10 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RunCommunicateWithServers" />
+        <item itemvalue="Application.RunCompressDecompressMaze" />
         <item itemvalue="Application.RunSearchOnMaze" />
         <item itemvalue="Application.RunMazeGenerator" />
         <item itemvalue="Application.searchTest" />
-        <item itemvalue="Application.SamuelTests" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585951028654</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add Decompress Class">
+      <created>1590489059693</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590489059693</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +244,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="Add .gitignore file ignoring all IDE setting files" />
     <MESSAGE value="MazeGenerators finish.&#10;Need to check SimpleMazeGenerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="MazeGenerators finish.&#10;Need to check SimpleMazeGenerator" />
+    <MESSAGE value="Add Decompress Class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Decompress Class" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1240" y="52" key="#Project_Structure" timestamp="1590488647238">
@@ -254,9 +277,14 @@
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
     <state x="-1102" y="-127" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.808/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585744759080" />
-    <state x="303" y="23" width="833" height="811" key="CommitChangelistDialog2" timestamp="1586701596934">
-      <screen x="0" y="23" width="1440" height="811" />
+    <state x="-1102" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590505985112">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
+    <state x="-1102" y="140" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590505985112" />
+    <state x="-1326" y="-127" width="833" height="811" key="CommitChangelistDialog2" timestamp="1590509969139">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
+    </state>
+    <state x="-1326" y="-127" key="CommitChangelistDialog2/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590509969139" />
     <state x="-1326" y="-114" key="CommitChangelistDialog2/0.23.1440.807/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1586115030765" />
     <state x="-1326" y="-114" key="CommitChangelistDialog2/0.23.1440.808/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585589483781" />
     <state x="-1326" y="-114" key="CommitChangelistDialog2/0.23.1440.811/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585951028421" />
@@ -271,9 +299,11 @@
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
     <state x="-989" y="287" key="Github.ShareDialog/0.23.1440.814/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585427340605" />
-    <state width="1680" height="254" key="GridCell.Tab.0.bottom" timestamp="1586701166027">
-      <screen x="-1680" y="-127" width="1680" height="1027" />
+    <state width="1398" height="55" key="GridCell.Tab.0.bottom" timestamp="1590528466912">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1638" height="377" key="GridCell.Tab.0.bottom/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590523433900" />
+    <state width="1398" height="55" key="GridCell.Tab.0.bottom/0.23.1440.805@0.23.1440.805" timestamp="1590528466912" />
     <state width="1680" height="594" key="GridCell.Tab.0.bottom/0.23.1440.808/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585593369037" />
     <state width="1440" height="158" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1585601155604" />
     <state width="1680" height="424" key="GridCell.Tab.0.bottom/0.23.1440.811/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585951034163" />
@@ -286,9 +316,11 @@
     <state width="1440" height="428" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1585761965650" />
     <state width="1638" height="392" key="GridCell.Tab.0.bottom/0.23.1440.821/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585413113380" />
     <state width="1680" height="185" key="GridCell.Tab.0.bottom/0.23.1440.877/-1680.-127.1680.955@-1680.-127.1680.955" timestamp="1585932054995" />
-    <state width="1680" height="254" key="GridCell.Tab.0.center" timestamp="1586701166026">
-      <screen x="-1680" y="-127" width="1680" height="1027" />
+    <state width="1398" height="55" key="GridCell.Tab.0.center" timestamp="1590528466911">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1638" height="377" key="GridCell.Tab.0.center/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590523433899" />
+    <state width="1398" height="55" key="GridCell.Tab.0.center/0.23.1440.805@0.23.1440.805" timestamp="1590528466911" />
     <state width="1680" height="594" key="GridCell.Tab.0.center/0.23.1440.808/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585593369036" />
     <state width="1440" height="158" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1585601155603" />
     <state width="1680" height="424" key="GridCell.Tab.0.center/0.23.1440.811/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585951034162" />
@@ -301,9 +333,11 @@
     <state width="1440" height="428" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1585761965649" />
     <state width="1638" height="392" key="GridCell.Tab.0.center/0.23.1440.821/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585413113379" />
     <state width="1680" height="185" key="GridCell.Tab.0.center/0.23.1440.877/-1680.-127.1680.955@-1680.-127.1680.955" timestamp="1585932054995" />
-    <state width="1680" height="254" key="GridCell.Tab.0.left" timestamp="1586701166025">
-      <screen x="-1680" y="-127" width="1680" height="1027" />
+    <state width="1398" height="55" key="GridCell.Tab.0.left" timestamp="1590528466911">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1638" height="377" key="GridCell.Tab.0.left/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590523433899" />
+    <state width="1398" height="55" key="GridCell.Tab.0.left/0.23.1440.805@0.23.1440.805" timestamp="1590528466911" />
     <state width="1680" height="594" key="GridCell.Tab.0.left/0.23.1440.808/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585593369036" />
     <state width="1440" height="158" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1585601155603" />
     <state width="1680" height="424" key="GridCell.Tab.0.left/0.23.1440.811/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585951034161" />
@@ -316,9 +350,11 @@
     <state width="1440" height="428" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1585761965649" />
     <state width="1638" height="392" key="GridCell.Tab.0.left/0.23.1440.821/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585413113378" />
     <state width="1680" height="185" key="GridCell.Tab.0.left/0.23.1440.877/-1680.-127.1680.955@-1680.-127.1680.955" timestamp="1585932054994" />
-    <state width="1680" height="254" key="GridCell.Tab.0.right" timestamp="1586701166026">
-      <screen x="-1680" y="-127" width="1680" height="1027" />
+    <state width="1398" height="55" key="GridCell.Tab.0.right" timestamp="1590528466911">
+      <screen x="0" y="23" width="1440" height="805" />
     </state>
+    <state width="1638" height="377" key="GridCell.Tab.0.right/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590523433900" />
+    <state width="1398" height="55" key="GridCell.Tab.0.right/0.23.1440.805@0.23.1440.805" timestamp="1590528466911" />
     <state width="1680" height="594" key="GridCell.Tab.0.right/0.23.1440.808/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585593369036" />
     <state width="1440" height="158" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1585601155603" />
     <state width="1680" height="424" key="GridCell.Tab.0.right/0.23.1440.811/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1585951034162" />
@@ -376,10 +412,10 @@
     <state x="221" y="72" key="SettingsEditor/0.23.1440.814/-1680.-127.1680.1027@0.23.1440.814" timestamp="1585426511577" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426414961" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425366104" />
-    <state x="-1240" y="126" key="Vcs.Push.Dialog.v2" timestamp="1590488919485">
+    <state x="-1240" y="126" key="Vcs.Push.Dialog.v2" timestamp="1590489072499">
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
-    <state x="-1240" y="126" key="Vcs.Push.Dialog.v2/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590488919485" />
+    <state x="-1240" y="126" key="Vcs.Push.Dialog.v2/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590489072499" />
     <state x="457" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1586700944987">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
@@ -402,5 +438,9 @@
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
     <state x="-1043" y="185" key="git4idea.merge.GitMergeDialog/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590488975992" />
+    <state x="-1411" y="9" key="new project wizard" timestamp="1590522793769">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
+    </state>
+    <state x="-1411" y="9" key="new project wizard/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590522793769" />
   </component>
 </project>

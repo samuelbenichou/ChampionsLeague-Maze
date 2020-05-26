@@ -4,8 +4,9 @@ import algorithms.mazeGenerators.Maze;
 import algorithms.mazeGenerators.Position;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class SearchableMaze implements ISearchable {
+public class SearchableMaze implements ISearchable,Serializable {
 
     private Maze maze;
 
