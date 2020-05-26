@@ -1,8 +1,9 @@
 package algorithms.search;
 
 import java.util.ArrayList;
+import java.io.Serializable;
 
-public class Solution {
+public class Solution implements Serializable {
 
     private ArrayList<AState> solutionPath;
 

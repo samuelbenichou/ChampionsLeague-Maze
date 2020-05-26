@@ -14,9 +14,9 @@ public class DepthFirstSearch extends ASearchingAlgorithm{
         stack = new Stack<>();
         states = new HashMap<>();
         AState goalState = DFS(domain);
-        //System.out.println("before back tracking");
         return goalState != null ? backTrackingToStartState(goalState) : null ;
     }
+
 
     private AState DFS(ISearchable domain){
         stack.push(domain.getStartState());
@@ -34,7 +34,6 @@ public class DepthFirstSearch extends ASearchingAlgorithm{
 
             for (AState s : domain.getAllPossibleStates(currentState)) {
                 if (!states.containsKey(s.toString())) {
-                    //System.out.println(s.toString());
                     stack.push(s);
                 }
             }
