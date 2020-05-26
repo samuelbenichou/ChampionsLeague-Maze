@@ -1,8 +1,12 @@
 package test;
 
 import IO.MyCompressorOutputStream;
-import IO.OutputStream;
+import IO.MyDecompressorInputStream;
 import algorithms.mazeGenerators.*;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.ArrayList;
 
 /**
  * Created by Samuel on 3/(22)/2020.
@@ -32,7 +36,7 @@ public class RunMazeGenerator {
 //        System.out.println(nb);
 
         MyMazeGenerator myMaze = new MyMazeGenerator();
-        Maze maze = myMaze.generate(10,10);
+        Maze maze = myMaze.generate(5,5);
         maze.print();
         System.out.println();
         //System.out.println(myMaze.measureAlgorithmTimeMillis(1000,1000));
@@ -45,14 +49,27 @@ public class RunMazeGenerator {
         maze2.print();
 
         System.out.println();
-        OutputStream outStr = new OutputStream();
+        OutputStream outStr = new OutputStream() {
+            @Override
+            public void write(int b) throws IOException {
+
+            }
+        };
         MyCompressorOutputStream mazeComp = new MyCompressorOutputStream();
+        ArrayList<Byte> mazeBytesInfo = new ArrayList<>();
         try{
-            mazeComp.write(mazeinfo);
+            mazeBytesInfo= mazeComp.writeForTest(mazeinfo);
         }
         catch (Exception e){
             System.out.println("exp");
         }
+
+        MyDecompressorInputStream mazeDEcomp = new MyDecompressorInputStream();
+        byte[] mazeinfoByte = mazeDEcomp.read(mazeBytesInfo);
+
+        System.out.println();
+        Maze maze3 = new Maze(mazeinfoByte);
+        maze3.print();
 
     }
 

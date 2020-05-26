@@ -7,33 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/IO/MyCompressorOutputStream.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/IO/OutputStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IO/MyDecompressorInputStream.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/META-INF/Maze.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/AMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/AMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/EmptyMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/EmptyMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/IMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/IMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/MyMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/MyMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SimpleMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SimpleMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ASearchingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ASearchingAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/AState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/AState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BestFirstSearch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BestFirstSearch$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BestFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BestFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BreadthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BreadthFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/DepthFirstSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/DepthFirstSearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ISearchable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ISearchable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ISearchingAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ISearchingAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/MazeState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/MazeState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/SearchableMaze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/SearchableMaze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/search/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/IO/OutputStream.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/test/RunSearchOnMaze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/test/RunSearchOnMaze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/Maze.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/MyMazeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/MyCompressorOutputStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/MyCompressorOutputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/IO/OutputStream.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -181,7 +160,7 @@
       <workItem from="1585737780382" duration="46156000" />
       <workItem from="1585997273857" duration="1158000" />
       <workItem from="1586700898672" duration="488000" />
-      <workItem from="1590070217245" duration="30626000" />
+      <workItem from="1590070217245" duration="41379000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1585426477749</created>
@@ -426,7 +405,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/RunMazeGenerator.java</url>
-          <line>28</line>
+          <line>32</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -435,9 +414,9 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/IO/MyCompressorOutputStream.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/src/test/RunMazeGenerator.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
