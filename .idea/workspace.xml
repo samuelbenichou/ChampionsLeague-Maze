@@ -7,19 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d33f2355-e863-41e9-a37d-2e3155b4e2f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/IO/MyDecompressorInputStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Position.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SamuelTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SimpleMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SimpleMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/searchTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/SamuelTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/mazeGenerators/SimpleMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/mazeGenerators/SimpleMazeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/search/Astate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/search/AState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/search/searchTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/RunMazeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Maze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/MyMazeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/mazeGenerators/SimpleMazeGenerator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/ASearchingAlgorithm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/AState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/BreadthFirstSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/DepthFirstSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/MazeState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/SearchableMaze.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/algorithms/search/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Maze/test/RunMazeGenerator.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
@@ -65,9 +72,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="Application.RunSearchOnMaze">
@@ -218,6 +225,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="MazeGenerators finish.&#10;Need to check SimpleMazeGenerator" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1240" y="52" key="#Project_Structure" timestamp="1590488647238">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
+    </state>
+    <state x="-1240" y="52" key="#Project_Structure/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590488647238" />
     <state x="-1028" y="103" key="#com.intellij.ide.util.MemberChooser" timestamp="1585944020152">
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
@@ -235,6 +246,10 @@
     </state>
     <state x="470" y="220" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.811/-1680.-127.1680.1027@0.23.1440.811" timestamp="1586701457527" />
     <state x="470" y="220" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.812@0.23.1440.812" timestamp="1586357783378" />
+    <state x="-988" y="293" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590488659019">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
+    </state>
+    <state x="-988" y="293" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590488659019" />
     <state x="-1102" y="-127" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1585744759080">
       <screen x="-1680" y="-127" width="1680" height="1027" />
     </state>
@@ -361,6 +376,10 @@
     <state x="221" y="72" key="SettingsEditor/0.23.1440.814/-1680.-127.1680.1027@0.23.1440.814" timestamp="1585426511577" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426414961" />
     <state x="221" y="72" key="SettingsEditor/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425366104" />
+    <state x="-1240" y="126" key="Vcs.Push.Dialog.v2" timestamp="1590488919485">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
+    </state>
+    <state x="-1240" y="126" key="Vcs.Push.Dialog.v2/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590488919485" />
     <state x="457" y="296" key="com.intellij.ide.util.TipDialog" timestamp="1586700944987">
       <screen x="0" y="23" width="1440" height="812" />
     </state>
@@ -379,5 +398,9 @@
     <state x="503" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816/-1680.-127.1680.1027@0.23.1440.816" timestamp="1585426398600" />
     <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821/-1680.-127.1680.1027@0.23.1440.821" timestamp="1585425500113" />
     <state x="503" y="357" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.821@0.23.1440.821" timestamp="1585583809361" />
+    <state x="-1043" y="185" key="git4idea.merge.GitMergeDialog" timestamp="1590488975992">
+      <screen x="-1680" y="-127" width="1680" height="1027" />
+    </state>
+    <state x="-1043" y="185" key="git4idea.merge.GitMergeDialog/0.23.1440.805/-1680.-127.1680.1027@-1680.-127.1680.1027" timestamp="1590488975992" />
   </component>
 </project>
