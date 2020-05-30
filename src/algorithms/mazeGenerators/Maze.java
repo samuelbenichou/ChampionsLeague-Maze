@@ -1,6 +1,5 @@
 package algorithms.mazeGenerators;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Random;
 import java.io.Serializable;
@@ -12,6 +11,7 @@ public class Maze implements Serializable{
     private int[][] maze;
     private Position start;
     private Position goal;
+    private int indexByteArray = 0;
 
 
     // Default Constructor
@@ -98,15 +98,13 @@ public class Maze implements Serializable{
         this.goal = goal;
     }
 
-    //-----------------------------------------------------------------------------------------------------part B
-
-    public Maze(byte[] mazeinfo){
+   public Maze(byte[] mazeinfo){
         int pos=0;
         int num=0;
         int x=0;
         int y=0;
         for(int i=0; i<6; i++){
-            while( mazeinfo[pos]!=-1 ){
+            while(  mazeinfo[pos]!=-1 ){
                 num = num + mazeinfo[pos];
                 pos++;
             }
@@ -193,5 +191,6 @@ public byte[] toByteArray() {
 
         return mazeBytesInfo;
     }
+
 
 }//class

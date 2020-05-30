@@ -2,40 +2,30 @@ package Server;
 
 import algorithms.mazeGenerators.Maze;
 import algorithms.search.*;
-import IO.MyCompressorOutputStream;
-import IO.MyDecompressorInputStream;
-
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 import java.io.*;
 
 public class ServerStrategySolveSearchProblem implements IServerStrategy {
 
-    private String tempDirectoryPath = System.getProperty("/tmp"); //java.io.tmpdir
-    private Lock m = new ReentrantLock(true);
     private static int numOfSavedMazes = 0;
 
     @Override
     public void serverStrategy(InputStream inFromClient, OutputStream outToClient) throws IOException {
         try {
             Solution solution = null;
-            //MyCompressorOutputStream compressor = new MyCompressorOutputStream(outToClient);
+            boolean newMaze = true;
             ObjectInputStream fromClient = new ObjectInputStream(inFromClient);
             ObjectOutputStream toClient = new ObjectOutputStream(outToClient);
             toClient.flush();
             Maze maze = (Maze) fromClient.readObject();
             SearchableMaze searchableMaze = new SearchableMaze(maze);
-            ASearchingAlgorithm solveAlgorithm = Configurations.getSearchingAlgorithm();
+            ASearchingAlgorithm res = new BreadthFirstSearch();
 
-            String tempDirectoryPath = System.getProperty("java.io.tmpdir");
-            File tmpdir = new File(tempDirectoryPath );
-            File[] fList = tmpdir.listFiles();
-            boolean newMaze = true;
+            String path = System.getProperty("java.io.tmpdir");
+            File tmpdir = new File(path );
+            File[] fileList = tmpdir.listFiles();
 
-            for (File file : fList) {
+            for (File file : fileList) {
                 if(file.getName().endsWith(".1")) {
                     FileInputStream inputMaze = new FileInputStream(file.getName());
                     ObjectInputStream objectIn = new ObjectInputStream(inputMaze);
@@ -55,7 +45,7 @@ public class ServerStrategySolveSearchProblem implements IServerStrategy {
             }
 
             if(newMaze){
-                solution = solveAlgorithm.solve(searchableMaze);
+                solution = res.solve(searchableMaze);
                 String mazeSaves = "java.io.tmpdir/"+numOfSavedMazes+".1";
                 File mazeSave = new File(mazeSaves);
                 FileOutputStream fileOut = new FileOutputStream(mazeSave.getName());
@@ -71,13 +61,9 @@ public class ServerStrategySolveSearchProblem implements IServerStrategy {
                 objectOutSol.flush();
                 objectOutSol.writeObject(solution);
                 objectOutSol.close();
-
                 numOfSavedMazes++;
             }
-
             toClient.writeObject(solution);
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }

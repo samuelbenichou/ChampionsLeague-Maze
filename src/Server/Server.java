@@ -8,7 +8,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
-
 public class Server {
 
     private int port;
@@ -35,7 +34,7 @@ public class Server {
 
     private void runServer() {
         try {
-            this.executorService = Executors.newFixedThreadPool(Configurations.getNumOfThreadPool());
+            this.executorService = Executors.newFixedThreadPool(4);
             ServerSocket serverSocket = new ServerSocket(port);
             serverSocket.setSoTimeout(listeningInterval);
 

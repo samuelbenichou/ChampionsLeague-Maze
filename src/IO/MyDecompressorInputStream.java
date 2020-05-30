@@ -10,10 +10,10 @@ public class MyDecompressorInputStream extends InputStream {
     private InputStream in;
 
     public MyDecompressorInputStream(InputStream stream){
-        in = stream;
+        this.in = stream;
     }
 
-    @Override
+
     public int read() {
         try {
             return in.read();
@@ -28,7 +28,7 @@ public class MyDecompressorInputStream extends InputStream {
     public int read(byte[] b) throws ArrayIndexOutOfBoundsException{
         try {
             int to_return = in.read(b);
-            decompress(b);
+            decompressFromArray(b);
             return to_return;
         }
         catch (IOException e){
@@ -37,22 +37,21 @@ public class MyDecompressorInputStream extends InputStream {
         }
     }
 
-    public static void decompress(byte[] in)  {
+    public static void decompressFromArray(byte[] in)  {
         int i = 0;
         try {
             ByteArrayOutputStream out = new ByteArrayOutputStream();
-            InflaterOutputStream infl = new InflaterOutputStream(out /*, new Inflater(true)*/);
-            infl.write(in);
-            infl.flush();
-            infl.close();
-
+            InflaterOutputStream inflater = new InflaterOutputStream(out);
+            inflater.write(in);
+            inflater.flush();
+            inflater.close();
             byte[] decompress = out.toByteArray();
-
-            for (i = 0 ; i < decompress.length ; i++)
+            for (i = 0 ; i < decompress.length ; i++) {
                 in[i] = decompress[i];
-
+            }
         } catch (Exception e) {
             System.out.println("index : " + i);
+            System.out.println("Length : " + in.length);
             e.printStackTrace();
         }
     }
