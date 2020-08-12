@@ -7,6 +7,8 @@ The **Champions League Maze** is a game in which the purpose of the game is for 
 The layout of the maze is such that the player must follow a series of narrow winding corridors with many false turns and dead-ends until they eventually reach the finish point.
 We implemented many programming principles such as design patterns, multiThreading programming, Server/Client, Gui and JavaFX and SOLID coding guidelines.
 We also practice use with Maven repositories manager include log4j2 LogManager.
+![alt text](https://github.com/samuelbenichou/ChampionsLeague-Maze/blob/master/C1.png) 
+
 
 
 
