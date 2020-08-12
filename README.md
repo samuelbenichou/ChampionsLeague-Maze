@@ -1,15 +1,17 @@
 # Champions League Maze
 
-----------------------------------------------
+![alt text](https://github.com/samuelbenichou/ChampionsLeague-Maze/blob/master/C1.png) 
+
+![Build Status](https://travis-ci.org/lemire/JavaFastPFOR.png)
+![Price](https://img.shields.io/badge/price-FREE-0098f7.svg)
+[![GitHub](https://img.shields.io/github/license/nevoit/Automated-Messages.svg)](https://github.com/samuelbenichou/ChampionsLeague-Maze/blob/master/LICENSE)
+![GitHub All Releases](https://img.shields.io/github/downloads/nevoit/Automated-Messages/total.svg)
 
 ## Genral info
 The **Champions League Maze** is a game in which the purpose of the game is for the player to make their way from the start point to the end point.
 The layout of the maze is such that the player must follow a series of narrow winding corridors with many false turns and dead-ends until they eventually reach the finish point.
 We implemented many programming principles such as design patterns, multiThreading programming, Server/Client, Gui and JavaFX and SOLID coding guidelines.
 We also practice use with Maven repositories manager include log4j2 LogManager.
-
-![alt text](https://github.com/samuelbenichou/ChampionsLeague-Maze/blob/master/C1.png) 
-
 
 ### Maze Creation Algorithm
 To create the mazes, I used the Prim algorithm, this algorithm is a greedy algorithm that finds a minimum spanning tree for a weighted undirected graph.
